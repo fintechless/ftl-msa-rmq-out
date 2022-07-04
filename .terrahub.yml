@@ -1,0 +1,13 @@
+project:
+  name: ftl_msa_rmq_out
+  code: 028a7c92
+  include:
+    - iac
+  exclude:
+    - .git
+    - .terraform
+
+terraform:
+  version: 1.2.3
+  varFile:
+    - default.tfvars

@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "ftl_msa_rmq_out"
+version = "0.0.1"
+description = "Serverless Platform for Financial Institutions and Fintechs"
+authors = ["Fintechless.com"]
+license = "Mozilla Public License Version 2.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pika = "^1.2.0"
+joblib = "^1.1.0"
+boto3 = "^1.21.34"
+python-dotenv = "^0.20.0"
+ftl-python-lib = {path = "../ftl-python-lib"}
+SQLAlchemy = "^1.4.39"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+black = "^21.12b0"
+pylint = "^2.12.2"
+pyenchant = "^3.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+tests = "poetry.main:run_tests"
+lint = "poetry.main:run_lint"
+format = "poetry.main:run_format"

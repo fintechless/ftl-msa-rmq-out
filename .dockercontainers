@@ -1,0 +1,4 @@
+msa:
+  rmq-out:
+    name: ftl_msa_rmq_out
+    dpl_name: msa-rmq-out-dpl

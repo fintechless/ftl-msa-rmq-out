@@ -102,15 +102,12 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
-ftl-python-sdk
-ftl-python-lib
 
 # Spyder project settings
 .spyderproject
@@ -134,7 +131,6 @@ dmypy.json
 **/.backup
 **/local_test
 **/.terraform
-# **/*.tfvars
 **/terraform/*/*.txt
 **/terraform/*/*.zip
 **/.terraform.**
@@ -142,3 +138,10 @@ dmypy.json
 **/terraform.tfstate**
 *.tfstate
 *.tfplan
+
+# Mac files
+*.DS_Store
+
+# IDEs
+.vscode/
+.idea/

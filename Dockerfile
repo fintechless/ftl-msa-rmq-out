@@ -31,7 +31,7 @@ ENV PLATFORM_DIR=/opt/ftl
 ENV CONSUMER_DIR=/opt/ftl/msa
 
 # Clone FTL PYTHON LIB from GitHub
-ENV GITHUB_FTL_PYTHON_LIB_VERSION=0.0.10
+ENV GITHUB_FTL_PYTHON_LIB_VERSION=0.0.12
 RUN git clone -b v${GITHUB_FTL_PYTHON_LIB_VERSION} –single-branch https://github.com/fintechless/ftl-python-lib.git ${PLATFORM_DIR}/ftl-python-lib
 # COPY ftl-python-lib ${PLATFORM_DIR}/ftl-python-lib
 

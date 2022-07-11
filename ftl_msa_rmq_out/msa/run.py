@@ -66,8 +66,9 @@ def _onMessage(chan, method_frame, header_frame, body, thread=1):
                 service_name=f"msa-msg-{destination[3]}-svc",
                 url_prefix=f"msa/{destination[3]}",
             ), headers={
-                'Content-Type': header_frame.content_type,
-                'X-Transaction-Id': transaction_id
+                'Content-Type': mapping_item.content_type,
+                'X-Transaction-Id': transaction_id,
+                'X-Message-Type': mapping_item.message_type
             }, params={}, data=body
             )
             LOGGER.logger.debug("The message has been delivered with result:")

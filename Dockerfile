@@ -20,7 +20,7 @@ ENV PIP_NO_CACHE_DIR=off \
     PIP_DEFAULT_TIMEOUT=100
 
 # Clone FTL PYTHON LIB from GitHub
-ENV FTL_PYTHON_LIB_VERSION=0.0.14
+ENV FTL_PYTHON_LIB_VERSION=0.0.15
 RUN git clone -b v${FTL_PYTHON_LIB_VERSION} --single-branch https://github.com/fintechless/ftl-python-lib.git
 # COPY ftl-python-lib ${PYTHONPATH}/ftl-python-lib
 
